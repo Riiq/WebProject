@@ -89,3 +89,96 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (Pastikan kode JS yang sudah ada, seperti Navbar dan Fade-in, tetap ada di atas) ...
+    
+    // ================== LOGIC UNTUK MODAL PORTOFOLIO ==================
+    const openModalButtons = document.querySelectorAll('.open-modal-btn');
+    const modal = document.getElementById('project-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalEventList = document.getElementById('modal-event-list');
+    const closeButtons = document.querySelectorAll('.close-btn');
+
+    // Data Acara untuk setiap Proyek
+    const projectData = {
+        'pln-brand-collaboration': {
+            title: 'Kerjasama Brand: PT PLN (Persero)',
+            // Daftar acara PLN yang simpel sesuai permintaan
+            events: [
+                'Lari Seru PLN',
+                'Konser PLN',
+                'Sosialisasi PLN',
+                'Perayaan Ulang Tahun PLN'
+            ]
+        },
+        'dpubmtr': { // Contoh data untuk item lain
+            title: 'DPUBMTR: Pameran Inovasi Infrastruktur',
+            events: [
+                'Konferensi Pembukaan',
+                'Workshop Teknologi Konstruksi',
+                'Pameran Proyek Strategis',
+                'Konferensi Pembukaan',
+                'Workshop Teknologi Konstruksi',
+                'Pameran Proyek Strategis',
+                'Konferensi Pembukaan',
+                'Workshop Teknologi Konstruksi',
+                'Pameran Proyek Strategis',
+                'Konferensi Pembukaan',
+                'Workshop Teknologi Konstruksi',
+                'Pameran Proyek Strategis',
+                'Konferensi Pembukaan',
+                'Workshop Teknologi Konstruksi',
+                'Pameran Proyek Strategis',
+                'Sesi Networking Investor'
+            ]
+        },
+        'pupr': { // Contoh data untuk item lain
+            title: 'PUPR: Konferensi Regional Pembangunan',
+            events: [
+                'Sesi Panelis Utama',
+                'Presentasi Studi Kasus',
+                'Diskusi Meja Bundar',
+                'Pemberian Penghargaan'
+            ]
+        }
+        // Tambahkan data lain untuk proyek lain dengan ID yang sesuai
+    };
+    
+    // Fungsi untuk membuka modal dan mengisi konten
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-modal-target');
+            const data = projectData[targetId];
+
+            if (data) {
+                modalTitle.textContent = data.title;
+                
+                modalEventList.innerHTML = ''; // Kosongkan list
+                data.events.forEach(eventText => {
+                    const li = document.createElement('li');
+                    li.textContent = eventText;
+                    modalEventList.appendChild(li);
+                });
+
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; 
+            }
+        });
+    });
+
+    // Fungsi untuk menutup modal
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        });
+    });
+
+    // Fungsi untuk menutup modal jika mengklik di luar konten modal
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+    });
+});
