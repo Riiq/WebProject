@@ -82,7 +82,6 @@
                          adalah tagline yang berarti "Menciptakan Acara yang Luar Biasa". Makna di baliknya adalah perusahaan jasa event tersebut berjanji untuk menciptakan acara-acara yang tidak hanya biasa, tetapi juga luar biasa, unik, dan berkesan.
                     </p>
                     
-                    <div class="value-grid">
                         <div class="value-item fade-in-item">
                             <span class="icon-circle icon-orange">🎯</span>
                             <div>
@@ -97,7 +96,6 @@
                                 <p>luar biasa, istimewa, atau patut diingat.</p>
                             </div>
                         </div>
-                    </div>
                     <div class="value-item fade-in-item">
                         <span class="icon-circle icon-pink">❤️</span>
                         <div>
@@ -107,7 +105,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="services" class="section-padding bg-light-gray">
@@ -234,36 +231,38 @@
             </div>
             
             <div class="portfolio-grid">
-                <div class="project-item fade-in-item portfolio-zoom">
-                    <img src="logo/pln.png" alt="Event1">
+                
+                <div class="project-item fade-in-item portfolio-zoom" data-project="pln-brand-collaboration">
+                    <img src="logo/pln.png" alt="Kolaborasi PLN">
                     <div class="overlay">
                         <span class="badge badge-orange">PLN</span>
-                        <h4>lorem ipsum dolor amet</h4>
-                        <p>Lorem ipsum, dolor amet | lorem</p>
-                        <a href="https://www.instagram.com/reel/DO_SsAxD9mc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-white-small">Lihat Detail</a>
+                        <h4>Kerjasama Brand: PT PLN (Persero)</h4>
+                        <p>Total empat acara besar berhasil kami selenggarakan.</p>
+                        <button class="btn btn-white-small open-modal-btn" data-modal-target="pln-brand-collaboration">Lihat Acara Lebih Lanjut</button>
                     </div>
                 </div>
                 
-                <div class="project-item fade-in-item portfolio-zoom">
+                <div class="project-item fade-in-item portfolio-zoom" data-project="dpubmtr">
                     <img src="logo/dpubmtr.png" alt="Event2">
                     <div class="overlay">
-                        <span class="badge badge-blue">Event 2</span>
-                        <h4>lorem ipsum dolor amet</h4>
-                        <p>Lorem ipsum, dolor amet | lorem</p>
-                        <a href="https://www.instagram.com/reel/DLMS4HYvHnB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-white-small">Lihat Detail</a>
+                        <span class="badge badge-blue">DPUBMTR</span>
+                        <h4>Pameran Inovasi Infrastruktur</h4>
+                        <p>Detail event menarik lainnya dari klien ini.</p>
+                        <button class="btn btn-white-small open-modal-btn" data-modal-target="dpubmtr">Lihat Acara Lebih Lanjut</button>
                     </div>
                 </div>
 
-                <div class="project-item fade-in-item">
+                <div class="project-item fade-in-item" data-project="pupr">
                     <img src="logo/pupr.png" alt="Event2">
                     <div class="overlay">
-                        <span class="badge badge-pink">Event 3</span>
-                        <h4>lorem ipsum dolor amet</h4>
-                        <p>Lorem ipsum, dolor amet | lorem</p>
-                        <a href="https://www.instagram.com/reel/DDExdtOySCw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-white-small">Lihat Detail</a>
+                        <span class="badge badge-pink">PUPR</span>
+                        <h4>Konferensi Regional Pembangunan</h4>
+                        <p>Detail event menarik lainnya dari klien ini.</p>
+                        <button class="btn btn-white-small open-modal-btn" data-modal-target="pupr">Lihat Acara Lebih Lanjut</button>
                     </div>
                 </div>
             </div>
+            
             <div class="portfolio-grid">
                 <div class="project-item fade-in-item portfolio-zoom">
                     <img src="logo/pupr.png" alt="Event1">
@@ -482,16 +481,15 @@
             </div>
         </div>
     </footer>
-
+    
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 class="modal-title" id="modal-title">Judul Proyek</h3>
+            <p class="modal-subtitle">Daftar Rangkaian Acara:</p>
+            <ul class="event-list-modal" id="modal-event-list">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
