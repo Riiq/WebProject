@@ -101,47 +101,96 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Data Acara untuk setiap Proyek
     const projectData = {
-        'pln-brand-collaboration': {
-            title: 'Kerjasama Brand: PT PLN (Persero)',
-            // Daftar acara PLN yang simpel sesuai permintaan
+        'pln': {
+            title: 'PLN: Gathering, Hari Besar & Peresmian Unit',
             events: [
-                'Lari Seru PLN',
-                'Konser PLN',
-                'Sosialisasi PLN',
-                'Perayaan Ulang Tahun PLN'
+             'Peresmian Gedung PLN UP3 Lubuk Linggau',
+             'Raker PLN Semester 1',
+             'Seleksi Penghargaan PLN U1D S2JB',
+             'Light Up The Dream PLN lokasi Gandus',
+             'Employee Gathering PLN UID S2JB',
+             'Employee Gathering PLN UP3 Lubuk Linggau',
+             'Customer Gathering PLN UP3 Palembang',
+             'Hari Listrik Nasional PLN UID S2JB',
+             'Hari Listrik Nasional PLN UP3 Palembang',
+             'Hari Listrik Nasional PLN UP3 Lubuk Linggau',
+             'Hari Listrik Nasional PLN UP3 Ogan Ilir',
+             'Light Up The Dream PLN lokasi KM 14',
+             'Media Gathering PLN UID S2JB',
+             'Pameran Inovasi Motor Listrik PLN UID S2JB',
+             'Gathering Transaksi Energi PLN UP3 Lubuk Linggau',
+             'Employee Gathering PLN UP3 Palembang'
             ]
         },
-        'dpubmtr': { // Contoh data untuk item lain
-            title: 'DPUBMTR: Pameran Inovasi Infrastruktur',
+        'pubmtr': {
+            title: 'PUPR & PUBMTR: Peresmian Infrastruktur & Launching Program',
             events: [
-                'Konferensi Pembukaan',
-                'Workshop Teknologi Konstruksi',
-                'Pameran Proyek Strategis',
-                'Konferensi Pembukaan',
-                'Workshop Teknologi Konstruksi',
-                'Pameran Proyek Strategis',
-                'Konferensi Pembukaan',
-                'Workshop Teknologi Konstruksi',
-                'Pameran Proyek Strategis',
-                'Konferensi Pembukaan',
-                'Workshop Teknologi Konstruksi',
-                'Pameran Proyek Strategis',
-                'Konferensi Pembukaan',
-                'Workshop Teknologi Konstruksi',
-                'Pameran Proyek Strategis',
-                'Sesi Networking Investor'
+             'Launching BLUD Dinas PU BM TR Sumsel',
+             'Peresmian IPAL',
+             'Peresmian Jalan Baru Pali-Lubuk Linggau',
+             'Peresmian Jembatan Bong',
+             'Peresmian Infrastruktur Jembatan Air Bayau',
+             'Peresmian Infrastruktur Jalan Lingkar Desa Pelang Kenidai'
             ]
         },
-        'pupr': { // Contoh data untuk item lain
-            title: 'PUPR: Konferensi Regional Pembangunan',
+        'pupr' : {
+			title: 'PUPR : Pekerjaan Umum dan Perumahan Rakyat',
+			events: [
+			 'Launching BLUD Dinas PU BM TR Sumsel',
+             'Peresmian IPAL',
+             'Peresmian Jalan Baru Pali-Lubuk Linggau',
+             'Peresmian Jembatan Bong',
+             'Peresmian Infrastruktur Jembatan Air Bayau',
+             'Peresmian Infrastruktur Jalan Lingkar Desa Pelang Kenidai'
+			]
+		}
+        'kemenpar_dispar': {
+            title: 'KEMENPAR & DISPAR: Festival, Award, & Promosi Wisata Daerah',
             events: [
-                'Sesi Panelis Utama',
-                'Presentasi Studi Kasus',
-                'Diskusi Meja Bundar',
-                'Pemberian Penghargaan'
+             'G20 KLHK Bali',
+             'Anugerah Pesona Indonesia (API)',
+             'Festival Sriwijaya',
+             'Launching Calender of Event 2025',
+             'HUT OKU Selatan',
+             'HUT OKU Timur',
+             'HUT Muba Batik Karnaval',
+             'HUT Pagaralam',
+             'Festival Sleman',
+             'Jakarta Travel Fair'
             ]
-        }
-        // Tambahkan data lain untuk proyek lain dengan ID yang sesuai
+        },
+        'dispora': {
+            title: 'DISPORA: Pekan Olahraga Daerah',
+            events: [
+             'Porda DIY',
+             'Launching Logo Porprov Lahat'
+            ]
+        },
+        'pertamina_brightgas': {
+            title: 'PERTAMINA PATRANIAGA & BRIGHTGASS: Kompetisi Memasak',
+            events: [
+             'Bright Gas Cooking Competition'
+            ]
+        },
+        'teh_pucuk': {
+            title: 'TEH PUCUK: Konser Musik Anak Muda (Cool Jam)',
+            events: [
+             'Pucuk Cool Jam Palembang',
+             'Pucuk Cool Jam Lampung'
+            ]
+        },
+        'indomaret': {
+            title: 'INDOMARET: Acara Lari Rekreasi (Fun Run)',
+            events: [
+             'Indomaret Fun Run'
+            ]       
+        },
+        'citraland_asrigita': {
+            title: 'ASRIGITA & CITRALAND: Perayaan Ulang Tahun Properti',
+            events: [
+             'Anniversary CitraLand 7th'
+            ]
+        },
     };
     
     // Fungsi untuk membuka modal dan mengisi konten
@@ -182,3 +231,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
