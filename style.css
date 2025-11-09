@@ -223,7 +223,10 @@ h1, h2, h3, h4 {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #6495ed, #7aa4ff, #ffa07a, #ff6b6b); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 150px;
     text-align: center;
     color: #fff;
@@ -593,6 +596,7 @@ h1, h2, h3, h4 {
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
+    max-height: 600px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     animation: slideIn 0.3s ease-out;
@@ -607,7 +611,6 @@ h1, h2, h3, h4 {
 
 .modal-subtitle {
     color: #666;
-    margin-bottom: 20px;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
@@ -652,6 +655,12 @@ h1, h2, h3, h4 {
     margin-left: -1em;
 }
 
+.modal-scroll{
+    display: flex;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
 /* Animasi */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -665,7 +674,7 @@ h1, h2, h3, h4 {
 .contact-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
+    gap: 30px;
 }
 
 .contact-form, .contact-info-wrapper {
@@ -673,6 +682,8 @@ h1, h2, h3, h4 {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    max-height: 600px;
+    width: 750px;
 }
 
 .contact-form h3 {
@@ -681,15 +692,15 @@ h1, h2, h3, h4 {
     color: #333;
 }
 
-.contact-form form input, 
-.contact-form form textarea {
+.contact-form {
     width: 100%;
+    height: 600px;
     padding: 12px;
-    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: inherit;
     font-size: 16px;
+    max-width: 350px;
 }
 
 .btn-full {
@@ -855,3 +866,4 @@ h1, h2, h3, h4 {
     .section-padding { padding: 50px 0; }
     .footer-col { text-align: center; }
 }
+
