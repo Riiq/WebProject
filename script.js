@@ -119,7 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
              'Media Gathering PLN UID S2JB',
              'Pameran Inovasi Motor Listrik PLN UID S2JB',
              'Gathering Transaksi Energi PLN UP3 Lubuk Linggau',
-             'Employee Gathering PLN UP3 Palembang'
+             'Employee Gathering PLN UP3 Palembang',
+			 'Posko Nataru'
             ]
         },
         'dpubmtr': {
@@ -144,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
              'Peresmian Infrastruktur Jalan Lingkar Desa Pelang Kenidai'
 			]
 		},
-        'kemenpar_dispar': {
+        'kemenpar_dispar' : {
             title: 'KEMENPAR & DISPAR: Festival, Award, & Promosi Wisata Daerah',
             events: [
              'G20 KLHK Bali',
@@ -185,12 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
              'Indomaret Fun Run'
             ]       
         },
-        'citraland_asrigita': {
-            title: 'ASRIGITA & CITRALAND: Perayaan Ulang Tahun Properti',
+        'citraland': {
+            title: 'Citraland',
             events: [
              'Anniversary CitraLand 7th'
             ]
         },
+		'asrigita' : {
+			title: 'Asrigita',
+			events: [
+			 'Chinese new year 2025 PT ASRIGITA PRASARANA',
+			 'Halal bi halal 2025 PT ASRIGITA PRASARANA PLTGU'
+			]
+		}
     };
     
     // Fungsi untuk membuka modal dan mengisi konten
