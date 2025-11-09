@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
              'Employee Gathering PLN UP3 Palembang'
             ]
         },
-        'pubmtr': {
+        'dpubmtr': {
             title: 'PUPR & PUBMTR: Peresmian Infrastruktur & Launching Program',
             events: [
              'Launching BLUD Dinas PU BM TR Sumsel',
@@ -231,4 +231,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
