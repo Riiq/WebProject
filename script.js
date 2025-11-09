@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
              'Peresmian Infrastruktur Jembatan Air Bayau',
              'Peresmian Infrastruktur Jalan Lingkar Desa Pelang Kenidai'
 			]
-		}
+		},
         'kemenpar_dispar': {
             title: 'KEMENPAR & DISPAR: Festival, Award, & Promosi Wisata Daerah',
             events: [
@@ -231,5 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 
