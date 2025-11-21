@@ -345,12 +345,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-// ================== REDIRECT BUTTON WHATSAPP ==================
-
-	    function WAredirect() {
-      window.open("https://wa.me/6285809859423?text=Halo%2C%20saya%20ingin%20melakukan%20konsultasi.", "_blank");
-    }
-
     // ================== LOGIKA ANIMASI FADE-IN (INTERSECTION OBSERVER) ==================
 const revealElements = document.querySelectorAll('.fade-in-item');
 
@@ -417,5 +411,6 @@ document.addEventListener('keydown', function(event) {
     }
 
 });
+
 
 
