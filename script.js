@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'kemenpar_dispar', imgSrc: 'logo/pupr.png', imgAlt: 'Event DISPAR', badgeClass: 'badge-pink', badgeText: 'DISPAR', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
         { id: 'kemenpar_dispar', imgSrc: 'logo/kemenpar.png', imgAlt: 'Event KEMENPAR', badgeClass: 'badge-pink', badgeText: 'KEMENPAR', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
         { id: 'dispora', imgSrc: 'logo/dispora.png', imgAlt: 'Event DISPORA', badgeClass: 'badge-pink', badgeText: 'DISPORA', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
-        { id: 'disperindak', imgSrc: 'logo/pupr.png', imgAlt: 'Event DISPERINDAK', badgeClass: 'badge-pink', badgeText: 'DISPERINDAK', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
         { id: 'dkni', imgSrc: 'logo/dkni.png', imgAlt: 'Event DKNI', badgeClass: 'badge-pink', badgeText: 'Dewan Kerajinan Nasional', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
         { id: 'pertamina_brightgas', imgSrc: 'logo/brightgas.png', imgAlt: 'Event Brightgas', badgeClass: 'badge-pink', badgeText: 'Brightgas', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
         { id: 'citraland_asrigita', imgSrc: 'logo/asrigita.png', imgAlt: 'Event Asrigita', badgeClass: 'badge-pink', badgeText: 'Asrigita', title: 'Konferensi Regional Pembangunan', description: 'Detail event menarik lainnya dari klien ini.' },
@@ -406,4 +405,5 @@ document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
         event.preventDefault();
     }
+
 });
