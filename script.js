@@ -345,10 +345,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+// ================== REDIRECT BUTTON WHATSAPP ==================
+
+	    function WAredirect() {
+      window.open("https://wa.me/6285809859423?text=Halo%2C%20saya%20ingin%20melakukan%20konsultasi.", "_blank");
+    }
+
     // ================== LOGIKA ANIMASI FADE-IN (INTERSECTION OBSERVER) ==================
-    
-    // Variabel ini HARUS dideklarasikan SETELAH konten dinamis dirender
-    const revealElements = document.querySelectorAll('.fade-in-item');
+const revealElements = document.querySelectorAll('.fade-in-item');
 
     if ('IntersectionObserver' in window) {
         
@@ -407,3 +411,4 @@ document.addEventListener('keydown', function(event) {
     }
 
 });
+
